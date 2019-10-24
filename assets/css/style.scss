@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+$pink : #dd2a90;
+$green : #66a437;
+$red : red;
+$lightGreey : #f5f5f5;
+$greey : #c4c4c4;
+
+
+// general css
+input.form-control {
+    border-radius: 0;
+    border: none;
+    background: $lightGreey;
+}
+
+.btn.btn-primary {
+    border-radius: 0;
+    background: $pink;
+    border: none;
+}
+
+.btn.btn-primary.register-off {
+    background: #E5E5E5;
+}
+
+.btn.not-allowed {
+    cursor: not-allowed;
+}
+
+.btn.btn-primary.cancel {
+    background: $greey;
+}
+
+.mobile, .hide {
+    display: none;
+}
+
+
+
+// Large bg image
+.jumbotron {
+    min-height: 348px;
+    background: url(../../assets/images/component.jpg) center / cover;
+}
+
+
+// main section 
+#main {
+
+    margin-top: -170px;
+    margin-bottom: 30px;
+    
+    & > .row {
+        position: relative;
+    }
+
+    h1.tilte {
+        font-size: 62px;
+        font-weight: 800;
+    }
+
+    #table,
+    #form {
+        padding: 30px 45px;
+        position: absolute;
+        top: 80px;
+        min-height: 700px;
+        background-color: white;
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+    }
+
+} // main section ends
+
+
+
+
+
+
+// #table sec
+#table {
+
+    form {
+
+        button.search {
+            background: 0;
+            border: 0;
+            margin: 0px 20px 0px -30px;
+        }
+        input.form-control.search {
+            width: 270px;
+        }
+    }
+
+
+    .table { 
+        
+        thead th {
+            width: 25%;
+        }
+        thead th {
+            border: none;
+            padding-bottom: 5px;
+            font-weight: 800;
+            padding-left: 2px;
+        }
+        th {
+            border: none;
+        }
+        td {
+            border: none;
+            border-bottom: 1px solid $greey;
+            padding-left: 2px;
+        }
+    }
+
+
+}// #table sec
+
+
+
+
+
+// #form registration sec
+#form {
+
+
+    h4.form-title {
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-bottom: 1.6rem;
+    }
+
+    .exam-sec .exam-row:first-child .remove .btn {
+        color : $greey;
+        background: $lightGreey;
+        cursor: not-allowed;
+    }
+
+    .add-remove {
+
+        .btn {
+            height: 100%;
+        }
+
+        .add .btn {
+            background-color: $green;
+        }
+        .remove .btn {
+            background-color: $red;
+        }
+    }
+
+
+}// #form ends
+
+
+
+//pagination
+.page-link {
+    border: 0;
+    padding: 5px 4px;
+    font-weight: 600;
+    color: black;
+    transition: all .4s;
+}
+
+.page-link:hover,
+.page-item.active .page-link {
+    background: none;
+    color: $pink;
+}
+
+
+
+
+
+/*=====================
+        mobile
+=====================*/
+@media only screen and (max-width: 767px){
+
+
+    // general css
+
+    .btn.btn-primary {
+        flex: 0 0 48%;
+        font-size: 90%;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+
+    // Large bg image
+    #background {
+        min-height: 108px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    // main section 
+    #main {
+
+        margin-top: 0;
+        top: -63px;
+        position: relative;
+    
+
+        h1.tilte {
+            font-size: 2.3rem;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            top: 0;
+            padding: 0px 17px;
+        }
+        #table,
+        #form {
+            padding: 15px 5px;
+            top: -2px;
+            position: relative;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+
+
+
+    // table sec
+    form.form-inline.search-from {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-right: 3%;
+    }
+    input.form-control.search {
+        width: 100%;
+    }
+    button.search {
+        margin: 0px 0px 0px -30px;
+    }
+
+
+    #table .table {
+
+        font-size: 84%;
+
+    
+        tr {
+            display: flex;
+        }
+        
+        tr > td,
+        tr > th {
+            flex: 1 0;
+        }
+        
+        tr > td:first-child,
+        tr > th:first-child {
+            flex: 1.2 0;
+        }
+        
+        tr > td:last-child,
+        tr > th:last-child {
+            flex: 0 1.2;
+        }
+        
+        thead th:nth-child(2),
+        thead th:nth-child(3) {
+            text-align: center;
+        }
+        
+        .col.form-row.mb-4 {
+            margin-bottom: 10px !important;
+        }
+    } // end #table .table
+    
+
+
+} //end mobile
