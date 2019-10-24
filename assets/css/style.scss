@@ -235,16 +235,19 @@ input.form-control {
 
 
     // table sec
-    form.form-inline.search-from {
-        flex: 0 0 48%;
-        max-width: 48%;
-        margin-right: 3%;
-    }
-    input.form-control.search {
-        width: 100%;
-    }
-    button.search {
-        margin: 0px 0px 0px -30px;
+
+    #table {
+        form.form-inline.search-from {
+            flex: 0 0 48%;
+            max-width: 48%;
+            margin-right: 3%;
+        }
+        form input.form-control.search {
+            width: 100%;
+        }
+        form button.search {
+            margin: 0px 0px 0px -30px;
+        }
     }
 
 
