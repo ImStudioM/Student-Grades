@@ -10,8 +10,8 @@ B. Create new table & call it 'student', white 5 columns / or import 'student.sq
     2.'name' (Type varchar).
     3.'student_id' (Type int).
     4.'exam' (Type Text).
-    5. 'grade'(Type Text).
+    5.'grade'(Type Text).
   
-C. Edit 'config-app.php' white your databae details.
+C. Edit 'config-app.php' & add your databae details.
 
 D. Launch the app.
