@@ -1,6 +1,6 @@
 # Student-Grades (Student Grades test)
 
-To install the app on your server, please follow instruction.
+To install the app on your server, please follow the instruction.
 
 A. Create new Mysql database.
 
@@ -14,4 +14,4 @@ B. Create new table & call it 'student', white 5 columns / or import 'student.sq
   
 C. Edit 'config-app.php' & add your databae details.
 
-D. Launch the app.
+D. Launch the app 🚀.
